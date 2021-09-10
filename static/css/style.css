@@ -1,0 +1,142 @@
+/* GLOBAL SECTION /
+/* Define a color palette using CSS variables */
+:root {
+    --color-headings: #ccc;
+}
+
+/* Set box sizing of all elements */
+/* The default behavior of the model is content-box,
+border box reduces the height and width of the content
+to account for the border and padding.  */
+*, *::after, *::before {
+    box-sizing: border-box; /* 1 */
+}
+
+
+/* setting the default font size of all elements which inherit from the
+HTML element to 62.5% ensureest that 1 rem equals 10 pixels, which means that
+the default p tag font size will be 10 px instead of the web starndard of 16 px */
+html {
+    font-size: 62.5%
+}
+
+body {
+    /* Normalize rendering across browsers using margin: 0 on the body */
+    margin: 0px; 
+
+    /* Set the default typography for all body elements */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+
+
+
+/* NAVBAR SECTION */
+
+/* Element selector to show that we can select a specific element */
+nav {
+    background: black;
+    padding: 1rem
+}
+
+.navlist {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navlist__listitem{
+    padding: .5rem;
+}
+
+.navlist__link {
+    color: var(--color-headings);
+    text-decoration: none;
+}
+
+.navlist__link:hover {
+    color:#fff
+}
+
+
+@media screen and (min-width:768px) {
+   .navlist {
+       flex-direction: row;
+       justify-content: flex-start;
+   }
+
+   .navlist__listitem {
+       margin: 0 1rem;
+       padding: 0rem;
+   }
+
+   #lastitem {
+       margin-left: auto;
+   }
+
+}
+
+
+/* Hero Section */
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-shadow: 3px 3px black;
+    word-spacing: .5rem;
+    font-size: 3rem
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    padding: 5px;
+    background-color:rgba(0,0,0,.35);
+    font-size: 1rem
+}
+
+.Hero__Container {
+    align-items: center;
+    background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_320.webp)
+        no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 914px) {
+    .Hero__Container {
+        background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_768.webp);
+        background-size: cover;
+    }
+    h2 {
+        font-size: 3rem
+    }
+}
+
+@media screen and (min-width: 1388px) {
+    .Hero__Container {
+        background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_1024.webp);
+        background-size: cover;
+    }
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .Hero__Container {
+        background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_1400.webp);
+        background-size: cover;
+    }
+    h1 {
+        font-size: 9rem
+    }
+}
