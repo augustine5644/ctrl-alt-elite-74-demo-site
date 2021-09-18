@@ -127,7 +127,7 @@ nav {
 
 @media screen and (min-width: 1024px) {
     .hero__container {
-        background: url(s../images/hacker-at-night_ekdu3o_c_scale\,w_1024.webp);
+        background: url(../images/hacker-at-night_ekdu3o_c_scale\,w_1024.webp);
         background-size: cover;
         background-position: center;
     }
