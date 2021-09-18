@@ -106,7 +106,7 @@ nav {
 
 .hero__container {
     align-items: center;
-    background: url(static/images/hacker-at-night_ekdu3o_c_scale\,w_768.webp)
+    background: url(../images/hacker-at-night_ekdu3o_c_scale\,w_768.webp)
         no-repeat;
     background-size: cover;
     background-position: center;
@@ -127,7 +127,7 @@ nav {
 
 @media screen and (min-width: 1024px) {
     .hero__container {
-        background: url(static/images/hacker-at-night_ekdu3o_c_scale\,w_1024.webp);
+        background: url(s../images/hacker-at-night_ekdu3o_c_scale\,w_1024.webp);
         background-size: cover;
         background-position: center;
     }
@@ -141,7 +141,7 @@ nav {
 
 @media screen and (min-width: 1440px) {
     .hero__container {
-        background: url(static/images/hacker-at-night_ekdu3o_c_scale\,w_1400.webp);
+        background: url(../images/hacker-at-night_ekdu3o_c_scale\,w_1400.webp);
         background-size: cover;
         background-position: center;
     }
