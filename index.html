@@ -1,38 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="static/css/style.css" />
-    <title>Ctrl-Alt-Elite-74</title>
-  </head>
-  <body>
 
-    <!-- Navbar Section -->
-    <nav>
-      <ul class="navlist">
-        <li class="navlist__listitem">
-          <a class="navlist__link" href="#">Home</a>
-        </li>
-        <li class="navlist__listitem">
-          <a class="navlist__link" href="#">Insructors</a>
-        </li>
-        <li class="navlist__listitem">
-          <a class="navlist__link" href="#">Student List</a>
-        </li>
-        <li id="lastitem" class="navlist__listitem">
-            <a class="navlist__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <title>Ctrl-Alt-Elite-74</title>
+</head>
 
-    <!-- Hero Section -->
-    <div class="Hero__Container">
-      <h1>CTRL+ALT+ELITE-74</h1>
-      <br>
-      <h2>12 Weeks to Greatness!!!</h2>
+<body>
+  <!-- Navbar Section -->
+  <nav>
+    <ul class="navlist">
+      <li class="navlist__listitem">
+        <a class="navlist__link" href="#">Home</a>
+      </li>
+      <li class="navlist__listitem">
+        <a class="navlist__link" href="#">Instructors</a>
+      </li>
+      <li class="navlist__listitem">
+        <a class="navlist__link" href="#">Student List</a>
+      </li>
+      <li id="lastitem" class="navlist__listitem">
+        <a class="navlist__link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+
+  <div class="hero__container">
+    <h1 class="hero__text--large">CTRL+ALT+ELITE-74</h1>
+    <br />
+    <h2 class="hero__text--small">12 Weeks to Greatness!!!</h2>
+  </div>
+
+
+  <!-- Card Section -->
+  <div class="grid__container">
+
+    <div class="card">
+      <img src="static/images/python_logo.png" alt="" class="card__img" />
+      <div class="card__textbox">
+        <!-- Note that the textbox itslef is to lay the elements out in block vs. inline -->
+        <h2 class="card__title">Python</h2>
+        <p class="card__text">
+          Python is an interpreted, object-oriented, high-level programming
+          language with dynamic semantics. Its high-level built in data
+          structures, combined with dynamic typing and dynamic binding, make it
+          very attractive for Rapid Application Development, as well as for use
+          as a scripting or glue language to connect existing components
+          together.
+        </p>
+      </div>
     </div>
-
+    
+    <div class="card">
+      <img src="static/images/js_logo.png" alt="" class="card__img" />
+      <div class="card__textbox">
+        <!-- Note that the textbox itslef is to lay the elements out in block vs. inline -->
+        <h2 class="card__title">Javascript</h2>
+        <p class="card__text">
+          JavaScript, often abbreviated as JS, is a programming language that
+          conforms to the ECMAScript specification. JavaScript is high-level,
+          often just-in-time compiled, and multi-paradigm. It has curly-bracket
+          syntax, dynamic typing, prototype-based object-orientation, and
+          first-class functions.
+        </p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="static/images/flask-logo.png" alt="" class="card__img" />
+      <div class="card__textbox">
+        <!-- Note that the textbox itslef is to lay the elements out in block vs. inline -->
+        <h2 class="card__title">Flask</h2>
+        <p class="card__text">
+          Flask is a micro web framework written in Python. It is classified as
+          a microframework because it does not require particular tools or
+          libraries. It has no database abstraction layer, form validation, or
+          any other components where pre-existing third-party libraries provide
+          common functions.
+        </p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="static/images/react_logo.png" alt="" class="card__img" />
+      <div class="card__textbox">
+        <!-- Note that the textbox itslef is to lay the elements out in block vs. inline -->
+        <h2 class="card__title">React</h2>
+        <p class="card__text">
+          React is a free and open-source front-end JavaScript library for building user interfaces or UI components. It
+          is maintained by Facebook and a community of individual developers and companies. React can be used as a base in
+          the development of single-page or mobile applications.
+        </p>
+      </div>
+    </div>
+  </div>
+    
+    
+    
+    
   </body>
-</html>
+  
+  </html>

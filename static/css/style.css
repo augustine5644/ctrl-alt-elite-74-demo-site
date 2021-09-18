@@ -1,7 +1,8 @@
 /* GLOBAL SECTION /
 /* Define a color palette using CSS variables */
 :root {
-    --color-headings: #ccc;
+    --color-light-text: #ccc;
+    --color-dark-text: #333;
 }
 
 /* Set box sizing of all elements */
@@ -29,9 +30,6 @@ body {
     font-size: 1.6rem;
 }
 
-
-
-
 /* NAVBAR SECTION */
 
 /* Element selector to show that we can select a specific element */
@@ -53,12 +51,20 @@ nav {
 }
 
 .navlist__link {
-    color: var(--color-headings);
+    color: var(--color-light-text);
     text-decoration: none;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-property: box-shadow;
+    transition-duration: .05s;
+
+
 }
 
 .navlist__link:hover {
-    color:#fff
+    color: black;
+    background: white;
+    box-shadow: 0rem 0rem 1rem 1rem white;
 }
 
 
@@ -82,28 +88,29 @@ nav {
 
 /* Hero Section */
 
-h1 {
+.hero__text--large {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     text-shadow: 3px 3px black;
     word-spacing: .5rem;
-    font-size: 3rem
+    font-size: 2.5rem
 }
 
-h2 {
+.hero__text--small {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     padding: 5px;
     background-color:rgba(0,0,0,.35);
-    font-size: 1rem
+    font-size: 2rem
 }
 
-.Hero__Container {
+.hero__container {
     align-items: center;
-    background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_320.webp)
+    background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_768.webp)
         no-repeat;
     background-size: cover;
-    color: #fff;
+    background-position: center;
+    color: var(--color-light-text);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -111,32 +118,87 @@ h2 {
     text-align: center;
 }
 
-@media screen and (min-width: 914px) {
-    .Hero__Container {
-        background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_768.webp);
-        background-size: cover;
+
+@media screen and (min-width: 768px) {
+    .hero__text--large {
+        font-size: 4.5rem;
     }
-    h2 {
+}
+
+@media screen and (min-width: 1024px) {
+    .hero__container {
+        background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_1024.webp);
+        background-size: cover;
+        background-position: center;
+    }
+    .hero__text--large {
+        font-size: 6rem;
+    }
+    .hero__text--small {
         font-size: 3rem
     }
 }
 
-@media screen and (min-width: 1388px) {
-    .Hero__Container {
-        background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_1024.webp);
+@media screen and (min-width: 1440px) {
+    .hero__container {
+        background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_1400.webp);
         background-size: cover;
+        background-position: center;
     }
-    h1 {
-        font-size: 6rem;
+    .hero__text--large {
+        font-size: 9rem
+    }
+    .hero__text--small {
+        font-size: 4rem;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .Hero__Container {
-        background: url(/static/images/hacker-at-night_ekdu3o_c_scale\,w_1400.webp);
-        background-size: cover;
-    }
-    h1 {
-        font-size: 9rem
-    }
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    box-shadow: 1rem 1.4rem 2rem rgba(0, 0, 0, .2);
+    margin: 20px;
+    border-radius: 15px;
 }
+
+.card__img {
+    padding: 5rem;
+    max-width:60%;
+    align-self: center;
+
+} 
+
+.card__title {
+    padding: 1rem;
+}
+
+.card__text {
+    padding:1rem;
+}
+
+@media screen and (min-width: 768px) {
+   .card {
+       flex-direction:row;
+       max-width: 100%;
+   }
+   .card__img {
+       max-width:240px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .grid__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+
+}
+
+
+
+
+
